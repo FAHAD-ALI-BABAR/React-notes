@@ -38,6 +38,11 @@ function App() {
             <input type='range' min={6} max={100} value={length} onChange={(e)=>{setlength(e.target.value)}} className='cursor-pointer'/>
             <label>Length: {length}</label>
           </div>
+          <div className='flex items-center gap-x-1'>
+            <input type='checkbox' defaultChecked={numbervalid} id="number" onChange={()=>{
+              setnumber((prev)=>{!prev})
+            }}/>
+          </div>
         </div>
       </div>
     </>
