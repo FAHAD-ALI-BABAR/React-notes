@@ -1,7 +1,7 @@
 import React from 'react'
 function Basic() {
     function Car(props) {
-        return <li>I am a { props.brand }</li>;
+        return <li><h2>{props.id}</h2>I am a {props.brand }</li>;
       }
       
       function Garage() {
@@ -14,7 +14,7 @@ function Basic() {
     <>
          <h1>Who lives in my garage?</h1>
       <ul>
-        {cars.map((car) => <Car key={car.id} brand={car.brand} />)}
+        {cars.map((car) => <Car id={car.id} brand={car.brand} />)}
       </ul>
     </>
   )
