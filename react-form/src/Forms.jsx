@@ -9,8 +9,7 @@ function Forms() {
     const submitform=(event)=>{
       event.preventDefault();
       alert(`your name is: ${firstname+""+lastname}, 
-your email is:${email},
-your phone is:${phone}`
+your email is:${email}`
         
       )
     }
